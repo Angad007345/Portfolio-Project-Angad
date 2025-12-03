@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #0e0e0e;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* HERO SECTION ----------------------- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* PLACE BACKGROUND VIDEO HERE */
+        .hero video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.45;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        /* ROUND PROFILE PICTURE */
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff9800;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            background: #ff9800;
+            border-radius: 6px;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        /* SECTIONS ------------------------ */
+        section {
+            padding: 60px 10%;
+        }
+
+        h2.section-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff9800;
+            padding-left: 10px;
+        }
+
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 18px;
+        }
+
+        .card, .project-card {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-links a {
+            display: block;
+            margin: 5px 0;
+            color: #ff9800;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+
+    <!-- OPTIONAL BACKGROUND VIDEO -->
+    <!-- <video autoplay muted loop src="bg.mp4"></video> -->
+
+    <h1>Hi, I'm Angad Singh Baghel</h1>
+    <h2>MCA Student | Web Developer | AI/ML Enthusiast</h2>
+
+    <!-- ======== YOUR PHOTO HERE ======== -->
+    <!-- Replace yourphoto.jpg with your actual image file -->
+    <img src="angad.jpg" alt="My Photo" class="profile-pic">
+
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am an MCA student passionate about web development, AI/ML, and building meaningful projects.
+        I love creating clean UI, solving problems, and learning new technologies.
+    </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+        <div class="card">HTML, CSS, JavaScript</div>
+        <div class="card">Python, Java</div>
+        <div class="card">React, Node.js</div>
+        <div class="card">Git, GitHub</div>
+        <div class="card">Communication, Teamwork</div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>Library System</h3>
+            <p>A Library system that add name , remove name etc</p>
+            <strong>Tech Stack:</strong> Python <br><br>
+            <a href="https://github.com/Angad007345/Librarysystem" style="color:#ff9800;">GitHub Link</a>
+            
+        </div>
+
+        <div class="project-card">
+            <h3>Contact Book</h3>
+            <p>Saves contact</p>
+            <strong>Tech Stack:</strong> Python<br><br>
+            <a href="https://github.com/Angad007345/Assignment2Python" style="color:#ff9800;">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Attendance Tracker</h3>
+            <p>tracks Attendance</p>
+            <a href="https://github.com/Angad007345/Assignment2Python" style="color:#ff9800;">GitHub Link</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <h3>MCA — KR Mangalam University</h3>
+        <p>2025–2027</p>
+    </div>
+
+    <div class="card">
+        <h3>BCA — PDM University</h3>
+        <p>2022–2025</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-links">
+
+        <!-- ADD EMAIL -->
+        <a>Email: angadbaghel166@gmail.com</a>
+
+        <!-- ADD PHONE (OPTIONAL) -->
+        <a>Phone: +91 8307135819</a>
+
+        <!-- ADD GITHUB -->
+        <a href="https://github.com/Angad007345">GitHub Profile</a>
+
+        <!-- ADD LINKEDIN -->
+        <a href="https://www.linkedin.com/in/angad-singh-baghel-50587b215/">LinkedIn Profile</a>
+
+        <!-- ADD LEETCODE/HACKERRANK OPTIONAL -->
+        <a href="https://leetcode.com/u/Angad0082/">LeetCode</a>
+
+        <!-- CONTACT FORM -->
+        <!-- Replace YOUR_FORMSPREE_LINK -->
+        <form action="https://formspree.io/f/your-id" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required
+                style="width:100%; padding:10px; margin:8px 0; border-radius:5px;">
+            <textarea name="message" placeholder="Your Message" required
+                style="width:100%; padding:10px; height:120px; border-radius:5px;"></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </div>
+</section></section>
+
+<!-- ================= RESUME ================= -->
+<section id="resume">
+    <h2 class="section-title">Resume</h2>
+    <a href="#" class="btn">Download Resume</a>
+</section>
+
+<footer>
+    © 2025 Your Name
+</footer>
+
+</body>
+</html>
